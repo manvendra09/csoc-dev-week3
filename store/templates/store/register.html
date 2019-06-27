@@ -1,0 +1,24 @@
+{% extends "store/base.html" %}
+
+   {% block content %}
+
+   <div class="container">
+   	
+    <form method="POST">
+    	{% csrf_token %}
+    	{{form.as_p}}
+
+
+      <span><button class="btn btn-success" type="submit">register</button></span>
+
+    </form>
+
+    
+    <br>
+    <br>
+
+    if u alreadr egister <a href="/login"><strong>login</strong></a> here
+
+    </div>
+
+   {% endblock %}

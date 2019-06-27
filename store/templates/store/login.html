@@ -1,0 +1,24 @@
+{% extends "store/base.html" %}
+
+   {% block content %}
+
+   <div class="container">
+   	
+    <form method="POST">
+    	{% csrf_token %}
+    	{{form.as_p}}
+
+
+      <span><button class="btn btn-success" type="submit">login</button></span>
+
+    </form>
+
+    
+    <br>
+    <br>
+
+    if u dont have account  <a href="/register"><strong>register</strong></a> here
+
+    </div>
+
+   {% endblock %}
